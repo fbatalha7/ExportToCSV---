@@ -17,8 +17,10 @@ namespace export
 
         static void Main(string[] args)
         {
-            //caminhos dos arquivos
-            string way = @"C:\Users\felip\Documents\csv";
+            //caminhos dos arquivos      
+
+            string usuario = System.Environment.UserName;
+            string way = $@"C:\Users\{usuario}\Documents\csv";
             string arq = way + "\\" + "TesteCSV.csv";
 
             try
